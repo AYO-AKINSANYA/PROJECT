@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -13,6 +15,7 @@ body {
     min-height: 100vh;
     background-color: #f2f2f2;
 }
+
 :root {
     --dm: "DM Sans", sans-serif;
     --inter: "Inter", sans-serif;
@@ -21,20 +24,24 @@ body {
     --comorant: 'Cormorant Upright', sans-serif;
     --open-sans: 'Open Sans', sans-serif;
 }
+
 main {
     width: 100%;
 }
+
 .account {
-    background-color: aquamarine;
+    background-color: gray;
     height: 100px;
     display: flex;
     align-items: center;
     padding-left: 20px;
 }
+
 .account h2 {
     font-family: var(--poppins);
     font-size: 30px;
 }
+
 .profile {
     display: flex;
     width: 100%;
@@ -43,6 +50,7 @@ main {
     padding: 30px;
     height: 100%;
 }
+
 .list {
     background-color: #fff;
     border-radius: 7px;
@@ -51,33 +59,41 @@ main {
     width: 22%;
     padding: 20px;
 }
+
 .list section {
     display: flex;
     border-bottom: 1px solid #8b8484;
     margin-bottom: 20px;
     gap: 15px;
 }
+
 .list section span {
     font-size: 18px;
 }
+
 .list section:nth-of-type(4) {
     border-bottom: none;
 }
+
 .list article {
     display: flex;
     flex-direction: column;
 }
+
 .list article h4 {
     margin-bottom: 10px;
 }
+
 .list a {
     text-decoration: none;
     color: black;
     margin-bottom: 7px;
 }
+
 .list .active {
-    color: aquamarine;
+    color: gray;
 }
+
 .info {
     width: 65%;
     background-color: #fff;
@@ -86,6 +102,7 @@ main {
     padding: 20px;
     border-radius: 7px;
 }
+
 .info-header {
     width: 100%;
     border-bottom: 1px solid #8b8484;
@@ -95,8 +112,9 @@ main {
     justify-content: space-between;
     align-items: center;
 }
+
 .info-header button {
-    background-color: aquamarine;
+    background-color: gray;
     outline: none;
     border: none;
     height: 30px;
@@ -104,6 +122,7 @@ main {
     border-radius: 5px;
     font-weight: bold;
 }
+
 .info #account {
     width: 100%;
     display: flex;
@@ -112,14 +131,18 @@ main {
     align-items: center;
     /* display: none; */
 }
+
 .input-container {
     width: 100%;
     margin-bottom: 20px;
 }
+
 .info form label {
     display: block;
 }
-.info form input, .info form select {
+
+.info form input,
+.info form select {
     width: 100%;
     height: 45px;
     padding: 10px;
@@ -129,9 +152,10 @@ main {
     border-radius: 5px;
     margin-top: 5px;
 }
+
 .info form button {
     width: 70%;
-    background-color: aquamarine;
+    background-color: gray;
     height: 35px;
     outline: none;
     border: none;
@@ -140,6 +164,7 @@ main {
     margin-bottom: 10px;
     font-weight: bold;
 }
+
 .address {
     display: flex;
     flex-direction: column;
@@ -150,15 +175,18 @@ main {
     border-radius: 5px;
     display: none;
 }
+
 .address span {
     margin-bottom: 7px;
 }
+
 .address span:nth-of-type(1) {
     border-bottom: 1px solid #8b8484;
     padding-bottom: 5px;
     display: flex;
     justify-content: space-between;
 }
+
 .address span:nth-of-type(1) a:nth-of-type(1) {
     display: inline-block;
     background-color: #fdf6f6;
@@ -167,26 +195,31 @@ main {
     text-decoration: none;
     color: inherit;
 }
+
 .address i {
     margin-right: 10px;
 }
-.info .edit{
+
+.info .edit {
     width: 100%;
     margin-top: 30px;
-   
+
 }
+
 .info .edit form {
     display: flex;
     flex-direction: column;
     align-items: center;
     display: none;
 }
+
 .info .edit .major {
     width: 100%;
     display: flex;
     gap: 5%;
     justify-content: space-between;
 }
+
 .major .input-container {
     width: 47%;
 }
